@@ -1,15 +1,25 @@
 # MediPulse-Healthcare-PowerBI
 
 MediPulse is an interactive Power BI dashboard built using the CMS Hospital Compare dataset and a synthetic patient admissions dataset. The dashboard enables healthcare stakeholders to monitor hospital quality, clinical outcomes, and patient experience through interactive visualizations and KPIs.
-
 Dashboard Screenshots
+
+
 <img width="761" height="429" alt="image" src="https://github.com/user-attachments/assets/c3fa08bd-22b9-472f-8f61-fd3bf3770be3" />
+ 
+ 
  Hospital Quality Overview
 
+ 
  <img width="762" height="428" alt="image" src="https://github.com/user-attachments/assets/1a0c4bc1-efb3-4292-8e02-9f42a8d59936" />
+
+
+
 Readmissions & Clinical Outcomes
 
+
 <img width="763" height="427" alt="image" src="https://github.com/user-attachments/assets/699bc6e3-4830-4995-a362-64cb8d9cb487" />
+
+
 Patient Experience
 
 ## Key Features
