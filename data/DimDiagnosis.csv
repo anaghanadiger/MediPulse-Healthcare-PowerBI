@@ -1,0 +1,21 @@
+DiagnosisID,DiagnosisName,ICD10Code,DiagnosisCategory,SeverityLevel,AvgTreatmentCostUSD
+D001,Acute Myocardial Infarction,I21,Cardiovascular,Critical,15000
+D002,Heart Failure,I50,Cardiovascular,High,8500
+D003,Stroke,I63,Neurological,Critical,12000
+D004,Pneumonia,J18,Respiratory,Medium,6000
+D005,COPD Exacerbation,J44,Respiratory,Medium,5500
+D006,Appendicitis,K35,Gastrointestinal,Low,4200
+D007,Hip Fracture,S72,Musculoskeletal,High,11000
+D008,Sepsis,A41,Infectious,Critical,18000
+D009,Acute Kidney Injury,N17,Renal,High,13000
+D010,Breast Cancer,C50,Oncology,High,22000
+D011,Colorectal Cancer,C18,Oncology,High,19000
+D012,Asthma Exacerbation,J45,Respiratory,Low,3200
+D013,Depression,F32,Mental Health,Low,2800
+D014,Hypertensive Crisis,I10,Cardiovascular,Medium,4500
+D015,Normal Delivery,O80,Obstetrics,Low,6000
+D016,Cesarean Section,O82,Obstetrics,Medium,9500
+D017,Pediatric Fever,R50,Pediatric,Low,2200
+D018,Traumatic Brain Injury,S06,Neurological,Critical,25000
+D019,Urinary Tract Infection,N39,Infectious,Low,2400
+D020,Gastrointestinal Bleed,K92,Gastrointestinal,High,8000
