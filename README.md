@@ -79,6 +79,12 @@ Each dashboard page is designed around one stakeholder question and combines int
 | Dashboard Design | Structured each page around a business question, supported by key findings and stakeholder-focused visualizations |
 | Data Source | Combined real CMS Hospital Compare data with a Python-generated synthetic patient admissions dataset for patient-level analysis |
 
+
+
+<img width="731" height="452" alt="image" src="https://github.com/user-attachments/assets/b7ea217c-0eec-4a36-b171-ec726e789385" />
+
+
+
 ## Tools & Technologies
 
 - **Power BI Desktop**
