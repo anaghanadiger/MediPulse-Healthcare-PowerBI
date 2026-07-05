@@ -1,37 +1,83 @@
-# MediPulse-Healthcare-PowerBI
+# MediPulse | Healthcare Analytics Dashboard (Power BI)
 
-MediPulse is an interactive Power BI dashboard built using the CMS Hospital Compare dataset and a synthetic patient admissions dataset. The dashboard enables healthcare stakeholders to monitor hospital quality, clinical outcomes, and patient experience through interactive visualizations and KPIs.
+MediPulse is an end-to-end healthcare analytics project that combines real CMS Hospital Compare data with a Python-generated synthetic patient admissions dataset. The project demonstrates data cleaning, ETL, dimensional modelling, DAX, and interactive dashboard development in Power BI to support hospital quality and operational decision-making.
+
+## Business Questions
+
+This dashboard was built to answer three key questions:
+
+• Which states and hospital types require the greatest quality improvement?
+
+• Which diagnosis categories contribute most to readmissions and mortality?
+
+• Which patient groups are at greater risk, and how does patient experience vary across demographics and insurance providers?
+
+Each dashboard page is designed around one stakeholder question and combines interactive KPIs, visual analytics, and filtering to support operational decision-making.
+
+
+### Page 1 — Hospital Quality Overview
 
 
 
-<img width="761" height="429" alt="image" src="https://github.com/user-attachments/assets/c3fa08bd-22b9-472f-8f61-fd3bf3770be3" />
+
+<img width="765" height="434" alt="PAGE 1" src="https://github.com/user-attachments/assets/342d5b60-b427-4e12-83d0-9ebe82d7f62b" />
+
+
+
+
+
+### Page 2 — Readmissions & Clinical Outcomes
+
+
+
+
  
- 
- Hospital Quality Overview
-
- 
- <img width="762" height="428" alt="image" src="https://github.com/user-attachments/assets/1a0c4bc1-efb3-4292-8e02-9f42a8d59936" />
+<img width="761" height="434" alt="PAGE 2" src="https://github.com/user-attachments/assets/a70ccdd5-81e3-483b-ba68-b725dd8b502c" />
 
 
 
-Readmissions & Clinical Outcomes
 
 
-<img width="763" height="427" alt="image" src="https://github.com/user-attachments/assets/699bc6e3-4830-4995-a362-64cb8d9cb487" />
+
+### Page 3 — Patient Experience & Outcomes
 
 
-Patient Experience
 
-## Key Features
 
-- Star schema data model with dimension and fact tables
-- Used Python (Pandas & NumPy) for data cleaning, preprocessing, feature engineering, and generating a synthetic patient admissions dataset.
-- Power Query transformations and data cleaning
-- Custom Date dimension
-- 20+ DAX measures including YTD, YoY Growth, Readmission Rate, Mortality Rate, Good Outcome Rate, and Satisfaction Score
-- Interactive slicers and cross-filtering
-- Geographic analysis using map visuals
-- Conditional formatting for clinical outcome analysis
+
+
+<img width="765" height="432" alt="PAGE 3" src="https://github.com/user-attachments/assets/66b1e5f7-8ff1-4a76-b21e-c21a115520fe" />
+
+
+
+
+
+
+
+## Key Insights
+
+- **Non-profit hospitals account for 54.11% of hospitals** in the dataset, making them the largest ownership group, followed by government (21.45%) and for-profit hospitals (19.64%).
+
+- **Renal conditions have the highest 30-day readmission rate (20.73%)**, considerably higher than other diagnosis categories, highlighting an opportunity to strengthen discharge planning and follow-up care.
+
+- **Hospital quality ratings vary across states**, with average ratings in the displayed comparison ranging from **2.8★ to 3.8★**, demonstrating regional differences in hospital performance.
+
+- **Patients aged 75+ have the highest 30-day readmission rate (13.52%)**, while younger age groups remain below 10%, highlighting older adults as a priority group for post-discharge follow-up.
+
+- **Patient satisfaction remains consistent across insurance types (7.18–7.20/10)**, suggesting a broadly similar patient experience across insurance providers within this dataset.
+
+## Technical Features
+
+| Feature | Implementation |
+|---|---|
+| Data Modeling | Designed a star schema with 5 tables and 4 relationships |
+| Python Data Preparation | Used Python (Pandas & NumPy) for data cleaning, preprocessing, feature engineering, and synthetic patient admissions data generation |
+| ETL | Performed data transformation using Power Query (M), including data type conversion, derived columns, and a custom Date dimension |
+| DAX Measures | Developed 20+ DAX measures including YTD, YoY Growth, Readmission Rate, Mortality Rate, Good Outcome Rate, Average Length of Stay, and Patient Satisfaction |
+| Interactive Dashboard | Built interactive dashboards with slicers, cross-filtering, KPI cards, maps, matrices, and conditional formatting |
+| Time Intelligence | Implemented DAX time intelligence using DATESYTD and SAMEPERIODLASTYEAR |
+| Dashboard Design | Structured each page around a business question, supported by key findings and stakeholder-focused visualizations |
+| Data Source | Combined real CMS Hospital Compare data with a Python-generated synthetic patient admissions dataset for patient-level analysis |
 
 ## Tools & Technologies
 
@@ -67,18 +113,14 @@ This project combines:
   - HCAHPS
   - Timely & Effective Care
 
-- Synthetic patient admissions dataset (50,000 records) generated in Python for analytical purposes because patient-level admission data is not publicly available.
+- Python-generated synthetic patient admissions dataset (50,000 records) created to simulate patient-level operational data because CMS Hospital Compare does not publish patient-level admissions.
 
-## How to Use
-1. Download `MediPulse_Dashboard.pbix`
-2. Open in Power BI Desktop (free at powerbi.microsoft.com)
-3. Run `data_preparation.py` to regenerate processed CSVs if needed
-4. Re-point data source paths in Power Query → Refresh
+## Author
 
-## Key Insights
+Anagha Nadiger
 
-1. **Non-profit hospitals account for over half (54.11%) of all hospitals** in the dataset, making them the dominant ownership type, while for-profit hospitals represent 19.64%.
+Health Data Analyst | Biotechnology Graduate | Aspiring Data Analyst
 
-2. **Renal conditions have the highest 30-day readmission rate (20.73%)**, followed by respiratory (13.22%) and cardiovascular (13.20%) diagnoses, highlighting opportunities to strengthen post-discharge care for these patient groups.
+www.linkedin.com/in/anagha-nadiger
 
-3. **Patient satisfaction scores show minimal variation across insurance types**(range: 7.18–7.20 out of 10), suggesting that perceived care quality is largely independent of a patient's insurance coverage — a positive signal for healthcare equity.
+anaghanadiger@gmail.com
